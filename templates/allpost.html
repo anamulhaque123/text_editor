@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+
+
+{% block  body_block %}
+<!-- <style>
+    .success{
+    list-style: none;
+    background-color: #2e6da4;
+    color: white;
+    box-shadow: 12px 12px 12px #e61c66;
+    text-align: center;
+    }
+    </style>
+
+
+
+
+{% if messages %}
+<ul class="messages">
+       {% for message in messages %}
+             <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+       {% endfor %}
+</ul>
+{% endif %} -->
+
+<!-- {% for message in messages %}
+    <div class="message">
+        {{ message }}
+        <a href="#" class="del-msg">&times;</a>
+    </div>
+{% endfor %} -->
+{% for message in messages %}
+    <div id="message_container" class="alert {{ message.tags }} alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+        {{ message }}
+    </div>
+{% endfor %}
+<h1>INDEX</h1>
+
+<ul>
+
+{% if allpost %}
+{% for all in allpost %}
+<li><a href=" {% url 'info' slug=all.slug %}">{{ all.title }}</a> </li>
+
+{% endfor %}
+{% else %}
+
+<h4> No Data</h4>
+
+{% endif %}
+
+</ul>
+
+{% endblock %}

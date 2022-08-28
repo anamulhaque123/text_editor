@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block  body_block %} 
+ {% load notifications_tags %}
+
+
+{% notifications_unread as unread_count %}
+           {% if unread_count %}
+                    you have<b>{% live_notify_badge %}</b> unread notifications.
+                    {% live_notify_list  %}
+                    {{ live_notify_list | safe }}
+           {% endif %}
+
+
+
+{% endblock %}

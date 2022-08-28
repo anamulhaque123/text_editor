@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+<h1>  info </h1>
+<h3> Title:{{info.title }}</h3>
+<h3>BOdy:{{info.body | safe}}</h3>
+   <a href="{% url 'edit_post' slug=info.slug %}" class="btn btn-primary">Update</a>
+   
+{% endblock %}
