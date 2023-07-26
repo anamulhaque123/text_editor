@@ -24,6 +24,6 @@ text editor using django-ckeditor
 
 #10 version
 
-   django-ckeditor==6.1.0
+   #1.django-ckeditor==6.1.0
  
-  Django 3.2.5
+   #2.Django 3.2.5
