@@ -1,4 +1,4 @@
-text editor using django-ckeditor
+#text editor using django-ckeditor 
 
 text_editor project
 
