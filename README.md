@@ -1,7 +1,6 @@
-#text editor using django-ckeditor 
+text editor using django-ckeditor 
 
 
-text_editor project
 
 #1 create virtual environment: python -m venv text_editenv
 
