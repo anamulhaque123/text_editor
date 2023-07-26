@@ -26,7 +26,7 @@ from django.db.models.signals import post_save
 from notification import views
 
 from datetime import datetime
-
+ 
 
 # Create your views here.
 def registation(request):
