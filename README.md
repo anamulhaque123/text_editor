@@ -18,11 +18,12 @@ text editor using django-ckeditor
 
 #8 to check: python manage.py migrate
 
-#9 pip install 
+#9 python -m pip freeze > requirements.txt
 
 #9 python manage.py runserver
 
 #10 version
 
- django-ckeditor==6.1.0
+   django-ckeditor==6.1.0
+ 
   Django 3.2.5
