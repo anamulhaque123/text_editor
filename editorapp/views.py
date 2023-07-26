@@ -7,7 +7,6 @@ from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth import get_user_model
 
-import pip
 
 
 from django.contrib.auth.decorators import login_required
